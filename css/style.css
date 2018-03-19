@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .15s ease-in-out;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+  background: #fff no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.title {
+  width: 100%;
+  padding-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  background-color: #B8B8B8;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+
+.text {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+#text {
+  resize: none;
+  padding: 10px;
+  border: 2px solid #BFBFBF;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.letterInput {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.letterInput label {
+  text-align: center;
+}
+
+#letter {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #BFBFBF;
+}
+
+#buttonResult {
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #BFBFBF;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+#buttonResult:hover {
+  filter: brightness(80%);
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#result {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.error-text, .error-letter {
+  visibility: hidden;
+  font-size: 12px;
+  color: red;
+  font-style: italic;
+  margin-top: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+@media(max-width: 767px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    justify-content: center;
+    align-self: center;
+    padding-left: 0;
+  }
+}

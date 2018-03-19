@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zadanie III</title>
+  <script src="js/app.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="title">
+      <h1>Frequency counter</h1>
+    </div>
+    <div class="content">
+      <div class="form">
+        <div class="text">
+          <label>Enter text: </label>
+          <textarea id="text" cols="30" rows="6" placeholder="Text"></textarea>
+          <span class="error-text"></span>
+        </div>
+        <div class="letterInput">
+          <label>Enter letter: </label>
+          <input id="letter" type="text" maxlength="1"/>
+          <span class="error-letter"></span>
+        </div>
+      </div>
+      <div class="button">
+        <button id="buttonResult">Result</button>
+      </div>
+      <div class="result">
+        <p><b>Frequency your letter in text is:</b></p>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
